@@ -7,8 +7,8 @@ const DOM = {
   rateResult: document.querySelector(".rate-result"),
 };
 
-DOM.rates.forEach((li) => {
-  li.addEventListener("click", (e) => {
+DOM.rates.forEach((rate) => {
+  rate.addEventListener("click", (e) => {
     DOM.rates.forEach((li) => li.classList.remove("active")); //remove active class from all
     e.target.classList.add("active"); //add active class to selected rate
     const rateValue = e.target.dataset.rate;
